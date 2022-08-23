@@ -9,14 +9,16 @@
 </head>
 
 <body>
- <div class="wrapper">
+
   <header class="header">
     <div class="card_header">
       <a href="#">
         <img class="logo" src="svg/noemi-logo.svg" alt="Логотип" />
       </a>
 
-      <img src="svg/menu.svg" class="menu_burger" alt="Меню" />
+      <form>
+        <p><input class="menu_burger" type="button"></p>
+      </form>
 
       <nav class="menu">
         <ul class="menu_list">
@@ -28,15 +30,16 @@
           <li class="menu_item"><a class="menu_link" href="#">Контакты</a></li>
         </ul>
       </nav>
-    </div>
-
-    <h1 class="description">Блог о творчестве, спорте, <br> и образе жизни</h1>
+ 
+  </div>
+  <div class="description">
+    <h1 class="description_title">Блог о творчестве, спорте, и образе жизни</h1>
+  </div>
   </header>
 
   <div class="trends">
     <div class="trends_header">
-      <h2 class="trends_title title1">Сейчас в тренде</h2>
-      <div class="underline"></div>
+      <h2 class="trends_title title_trends">Сейчас в тренде</h2>
     </div>
     <div class="trends_content">
       <div class="trends_article trends_article1">
@@ -46,7 +49,10 @@
             <li class="category_item"><a class="category_link" href="#">Interior</a></li>
           </ul>
 
-          <p class="trend_description">Сейчас в тренде: сад на подоконнике</p>
+         
+            <h2 class="trend_description">
+              <a class="trend_link" href="#">Сейчас в тренде: сад на подоконнике</a>
+            </h2>
         </div>
       </div>
       <div class="trends_article trends_article2">
@@ -55,7 +61,10 @@
             <li class="category_item"><a class="category_link" href="#">Food</a></li>
           </ul>
 
-          <p class="trend_description">Cыры на красивых картинках из интернета: какие они на вкус? </p>
+            <h2 class="trend_description">
+              <a class="trend_link" href="#">Cыры на красивых картинках из интернета: какие они на вкус?</a>
+            </h2>
+          
         </div>
       </div>
       <div class="trends_article trends_article3">
@@ -66,7 +75,10 @@
             <li class="category_item"><a class="category_link" href="#">Travel</a></li>
           </ul>
 
-          <p class="trend_description"> Собираемся в первый поход в горы </p>
+            <h2 class="trend_description">
+              <a class="trend_link" href="#">Собираемся в первый поход в горы</a>
+            </h2>
+        
         </div>
       </div>
       <div class="trends_article trends_article4">
@@ -77,7 +89,9 @@
             <li class="category_item"><a class="category_link" href="#">Health</a></li>
           </ul>
 
-          <p class="trend_description"> Сейчас в тренде: сколько витамина С в лиманах? </p>
+            <h2 class="trend_description">
+              <a class="trend_link" href="#">Сейчас в тренде: сколько витамина С в лиманах?</a>
+            </h2>
 
         </div>
       </div>
@@ -98,7 +112,7 @@
           <h2><a class="article_title" href="#">10 мест, ради которых стоит проснутся на расвете</a></h2>
 
           <div class="date_author">
-            <time class="title_date" datetime="2019-06-10">10 июня 2019 </time>
+            <time class="title_date date_title" datetime="2019-06-10">10 июня 2019 </time>
             <p class="title_author">Неизвестный автор</p>
           </div>
 
@@ -118,7 +132,7 @@
             <h2>
 
               <div class="date_author">
-                <time class="title_date" datetime="2019-06-10">10 июня 2019 </time>
+                <time class="title_date date_title" datetime="2019-06-10">10 июня 2019 </time>
                 <p class="title_author">Неизвестный автор</p>
               </div>
 
@@ -137,7 +151,7 @@
           <h2><a class="article_title" href="#">Лучшие музыкальные фестивали этого лета</a></h2>
 
           <div class="date_author">
-            <time class="title_date" datetime="2019-06-10">10 июня 2019 </time>
+            <time class="title_date date_title" datetime="2019-06-10">10 июня 2019 </time>
             <p class="title_author">Неизвестный автор</p>
           </div>
 
@@ -158,7 +172,7 @@
             <h2>
 
               <div class="date_author">
-                <time class="title_date" datetime="2019-06-10">10 июня 2019 </time>
+                <time class="title_date date_title" datetime="2019-06-10">10 июня 2019 </time>
                 <p class="title_author">Неизвестный автор</p>
               </div>
 
@@ -179,7 +193,7 @@
             <h2>
 
               <div class="date_author">
-                <time class="title_date" datetime="2019-06-10">10 июня 2019 </time>
+                <time class="title_date date_title" datetime="2019-06-10">10 июня 2019 </time>
                 <p class="title_author">Неизвестный автор</p>
               </div>
 
@@ -192,7 +206,6 @@
     <aside class="aside">
       <section class="post">
         <h2 class="section_header">Новые посты</h2>
-        <div class="underline"></div>
         <div class="article_aside">
           <img class="aside_img" src="img/2.jpg" alt="Пляж">
           <div class="content_aside">
@@ -250,15 +263,17 @@
             <span class="screen_reader">Поле поиска</span>
             <input class="field_search" type="search" placeholder="Найти..." required>
           </label>
-          <span class="screen_reader">Кнопка поиска</span>
-          <button class="button_search"></button>
+          
+          <button class="button_search">
+            <span class="screen_reader">Кнопка поиска</span>
+          </button>
 
         </form>
       </section>
 
       <section class="subscription">
         <h2 class="section_header">Рассылка</h2>
-        <div class="underline"></div>
+       
         <form class="subscription_group">
           <label>
             <span class="screen_reader">Ваш email-адрес</span>
@@ -270,7 +285,6 @@
 
       <section class="tags">
         <h2 class="section_header">Теги</h2>
-        <div class="underline"></div>
 
         <ul class="tag_list">
           <li class="tag_item"><a class="tag_link" href="#">Fashion</a></li>
@@ -287,15 +301,15 @@
 
       <section class="topic">
         <h2 class="section_header">Темы</h2>
-        <div class="underline"></div>
+       
 
         <ul class=topic_list>
-          <li class="topic_item"><a class="topic_link" href="#">Красота</a> <sup class="number_of_topics">12</sup></li>
-          <li class="topic_item"><a class="topic_link" href="#">Здоровье</a><sup class="number_of_topics">4</sup></li>
-          <li class="topic_item"><a class="topic_link" href="#">Образ жизни</a><sup class="number_of_topics">145</sup></li>
-          <li class="topic_item"><a class="topic_link" href="#">Музыка</a><sup class="number_of_topics">28</sup></li>
-          <li class="topic_item"><a class="topic_link" href="#">Спорт</a><sup class="number_of_topics">62</sup></li>
-          <li class="topic_item"><a class="topic_link" href="#">Йога</a><sup class="number_of_topics">8</sup></li>
+          <li class="topic_item"><a class="topic_link" href="#">Красота</a> <span class="number_of_topics">12</span></li>
+          <li class="topic_item"><a class="topic_link" href="#">Здоровье</a> <span class="number_of_topics">4</span></li>
+          <li class="topic_item"><a class="topic_link" href="#">Образ жизни</a> <span class="number_of_topics">145</span></li>
+          <li class="topic_item"><a class="topic_link" href="#">Музыка</a> <span class="number_of_topics">28</span></li>
+          <li class="topic_item"><a class="topic_link" href="#">Спорт</a> <span class="number_of_topics">62</span></li>
+          <li class="topic_item"><a class="topic_link" href="#">Йога</a> <span class="number_of_topics">8</span></li>
         </ul>
       </section>
 
@@ -304,15 +318,21 @@
 
   <div class="our_products">
     <div class="products_header">
-      <h2 class="products_title title1">Наши изделия</h2>
-      <div class="underline"></div>
+      <h2 class="products_title title_products">Наши изделия</h2>
     </div>
 
     <div class="products">
 
       <div class="product product1">
         <div class="product_img">
-          <img src="img/shop-item-desk1.jpg" />
+
+
+          <picture>
+              <source  srcset="img/shop-item-tablet1.jpg" media="(max-width: 768px)" >
+                <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 360px)">
+               <img src="img/shop-item-desk1.jpg" alt="Подушка">
+          </picture>
+
         </div>
       <div class="product_content">
           <div class="product_title">Подушки на диван</div>
@@ -324,12 +344,19 @@
             </div>
             <a class="score_button" href="#">в магазин</a>
           </div>
-    </div>
+      </div>
       </div>
 
       <div class="product product2">
         <div class="product_img">
-          <img src="img/shop-item-desk2.jpg" />
+
+          <picture>
+              <source srcset="img/shop-item-tablet2.jpg" media="(max-width: 768px)">
+                <source srcset="img/shop-item-mobile2.jpg" media="(max-width: 360px)">
+               <img src="img/shop-item-desk2.jpg" alt="Кукла">
+          </picture>
+
+
         </div>
       <div class="product_content">
           <div class="product_title">Кукла «Зайчик»</div>
@@ -343,7 +370,11 @@
 
       <div class="product product3">
         <div class="product_img">
-          <img src="img/shop-item-desk3.jpg" />
+           <picture>
+              <source srcset="img/shop-item-tablet3.jpg" media="(max-width: 768px)">
+                <source srcset="img/shop-item-mobile3.jpg" media="(max-width: 360px)">
+               <img src="img/shop-item-desk3.jpg" alt="Рамка">
+          </picture>
         </div>
         <div class="product_content">
           <div class="product_title">Шестиугольная рамка</div>
@@ -357,9 +388,9 @@
           </div>
      </div>
       </div>
-    </div>
-  </div>
       </div>
+
+
 <footer class="footer">
       <div class="socials">
         <span class="screen_reader">Просмотр социальных сетей</span>
@@ -401,18 +432,17 @@
     </footer>
 
 <div class="popup hidden">
+           
       <div class="popup_body">
-        <div class="popup_content">
-          <form>
-            <button class="popup_close" type="button">
-              <img src="svg/form-x.svg" />
-            </button>
 
+        <div class="popup_content">
+           <form>
+                <button class="popup_close" type="button">   </button>
+          </form>
+          
             <div class="popup_title">
               <h2>Ваш фидбек</h2>
-              <div class="underline"></div>
             </div>
-
             <div class="popup_text">
               <form>
                 <label class="select_group">
@@ -441,11 +471,13 @@
                   <span class="form_hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
                   <textarea class="field textarea" placeholder="Может, больше рецептов?"></textarea>
                 </div>
-                <button class="button_popup" type="submit">Отправить</button>
+                <button class="button_popup" type="submit">Отправить
+                   <span class="screen_reader">Кнопка отправить</span>
+                </button>
 
               </form>
         </div>
-      </div>
+
 </body>
 
 </html>

@@ -25,15 +25,9 @@ body {
   height: 100%;
 }
 
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .header {
   font-family: "OpenSans";
-  padding: 30px 245px 130px 250px;
+  padding: 30px 0 145px 0;
   background-image: url(../img/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -55,21 +49,20 @@ body {
 }
 
 .card_header {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
 
 .logo {
-  height: 40px;
+  width: 180px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
-
-.menu {
-  margin-top: 8px;
 }
 
 .menu_list {
@@ -95,6 +88,12 @@ body {
 }
 
 .description {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.description_title {
   font-family: "OpenSans";
   font-weight: 700;
   font-size: 45px;
@@ -103,7 +102,6 @@ body {
   z-index: 1;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
   margin-top: 100px;
 }
 
@@ -113,6 +111,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
+  margin-bottom: 65px;
 }
 
 .trends_header {
@@ -125,8 +124,8 @@ body {
 
 .trends_article {
   padding-bottom: 40px;
-  width: 420px;
-  height: 320px;
+  width: 25%;
+  min-height: 320px;
   margin-right: 4px;
   position: relative;
   display: flex;
@@ -146,10 +145,10 @@ body {
 
 .trends_article_content {
   z-index: 1;
-  width: 300px;
+  width: 90%;
   outline: 3px solid #847746;
-  outline-offset: 25px;
   margin: 0 auto;
+  padding: 10px 10px;
 }
 
 .trends_article:nth-child(4) {
@@ -192,12 +191,22 @@ body {
 
 .trend_description {
   text-align: left;
-  color: #ffffff;
+  line-height: 1;
 }
 
-.middle {
+.trend_link {
+  color: #ffffff;
+  text-decoration: none;
   font-family: "OpenSans";
-  margin: 60px 220px 0px 220px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.middle {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "OpenSans";
   display: flex;
   justify-content: center;
 }
@@ -219,7 +228,6 @@ body {
 }
 
 .content {
-  width: 370px;
   margin-left: 30px;
 }
 
@@ -253,12 +261,52 @@ body {
 .product_title,
 .trends_title,
 .products_title {
+  position: relative;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
 }
+
+.section_header {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section_header::after {
+    content: ''; 
+    position: absolute; 
+    background: #e1d9bd; 
+    left: 38%; 
+    bottom: -5px; 
+    width: 65px; 
+    height: 3px; 
+   }
+
+.trends_title::after {
+    content: ''; 
+    position: absolute; 
+    background: #e1d9bd; 
+    left: 48%; 
+    bottom: -5px; 
+    width: 65px; 
+    height: 3px; 
+   }
+
+.products_title::after {
+    content: ''; 
+    position: absolute; 
+    background: #e1d9bd; 
+    left: 48%; 
+    bottom: -5px; 
+    width: 65px; 
+    height: 3px; 
+   }
+
 
 .article_title:hover {
   text-shadow: 0.5px 0.5px 0.5px #b59f5b;
@@ -272,8 +320,11 @@ body {
 .title_date {
   font-weight: 100;
   font-size: 12px;
-  margin-right: 10px;
   color: #9b9b9b;
+}
+
+.date_title {
+   margin-right: 10px;
 }
 
 .title_author {
@@ -293,24 +344,8 @@ body {
   width: 270px;
 }
 
-.section_header {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.underline {
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 65px;
-  height: 3px;
-  background-color: #b59f5b;
-}
-
 .article_aside {
   line-height: 1;
-  width: 280px;
   display: flex;
   align-items: flex-start;
   margin-top: 20px;
@@ -346,7 +381,7 @@ body {
 }
 
 .button_search {
-  background-image: url(../img/search.svg);
+  background-image: url(../svg/search.svg);
   border: none;
   background-color: #b59f5b;
   background-size: 20px 20px;
@@ -468,6 +503,7 @@ body {
 }
 
 .number_of_topics {
+  vertical-align: super;
   font-size: 12px;
   font-weight: 700;
   color: #b59f5b;
@@ -530,10 +566,10 @@ body {
 }
 
 .product_content {
-  height: 50%;
   outline: 3px solid #b59f5b;
   outline-offset: 30px;
   text-align: left;
+  flex-grow: 1;
   
 }
 
@@ -608,7 +644,7 @@ body {
   font-weight: 700;
   color: #999999;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 55px;
   padding-bottom: 40px;
 }
 
@@ -624,7 +660,7 @@ body {
 }
 
 .hidden {
-  display: none;
+/*  display: none;*/
 }
 
 .popup_body {
@@ -644,17 +680,37 @@ body {
 }
 
 .popup_title {
+  position: relative;
   font-size: 1rem;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
 }
+
+.popup_title::after {
+    content: ''; 
+    position: absolute; 
+    background: #e1d9bd; 
+    left: 40%; 
+    bottom: -5px; 
+    width: 65px; 
+    height: 3px; 
+   }
+
 .popup_close {
-  border: transparent;
-  background-color: transparent;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  width: 20px;
   top: -25px;
-  right: 0px;
+  right: -10px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  background-image: url(../svg/form-x.svg);
 }
 
 .popup_text {
@@ -742,7 +798,7 @@ body {
 
 .button_popup {
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   text-transform: uppercase;
   font-family: inherit;
   font-weight: 700;
@@ -751,11 +807,24 @@ body {
   border: none;
 }
 
-
 .menu_burger {
-   display: none;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  background-image: url(../svg/menu.svg);
+  background-size: 20px;
+  display: none;
+
 }
 
+
+
+
+/*============================================================================*/
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -773,7 +842,7 @@ body {
   font-size: 40px;
 }
 
-.title1 {
+.title_products, .title_trends {
   font-size: 18px;
 }
 
@@ -859,6 +928,7 @@ body {
 
   }
 
+/*=================================================================*/
 
   @media (max-width: 360px) {
   .menu {
@@ -867,7 +937,7 @@ body {
 
 .header {
 background-image: url(../img/banner-mobile.jpg);
-      padding: 35px 35px 100px 35px;
+      padding: 35px 0 100px 0;
     }
  .card_header {
   flex-direction: column-reverse;
@@ -876,6 +946,7 @@ background-image: url(../img/banner-mobile.jpg);
 .logo {
   display: block;
   margin: 0 auto;
+  width: 265px;
   height: 50px;
 
 }
