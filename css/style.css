@@ -49,17 +49,18 @@ body {
 }
 
 .card_header {
-  width: 1200px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  padding: 0 15%;
 }
 
 .logo {
-  width: 180px;
+  min-width: 180px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -71,8 +72,8 @@ body {
   display: flex;
 }
 
-.menu_item:nth-child(n + 2) {
-  margin-left: 35px;
+.menu_item {
+  margin-right: 8%;
 }
 
 .menu_link {
@@ -80,7 +81,7 @@ body {
   text-decoration: none;
   font-family: "OpenSans";
   font-weight: 100;
-  font-size: 13px;
+  font-size: 0.9vw;
 }
 
 .menu_link:hover {
@@ -88,7 +89,7 @@ body {
 }
 
 .description {
-  width: 700px;
+  width: 40%;
   margin: 0 auto;
   text-align: center;
 }
@@ -96,7 +97,7 @@ body {
 .description_title {
   font-family: "OpenSans";
   font-weight: 700;
-  font-size: 45px;
+  font-size: 3vw;
   line-height: 1.6;
   position: relative;
   z-index: 1;
@@ -213,7 +214,7 @@ body {
 
 .main {
   flex: 1 1 auto;
-  width: 780px;
+  width: 70%;
 }
 
 .article {
@@ -224,7 +225,7 @@ body {
 }
 
 .article_img {
-  width: 380px;
+  width: 100%;
 }
 
 .content {
@@ -262,7 +263,7 @@ body {
 .trends_title,
 .products_title {
   position: relative;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -291,7 +292,7 @@ body {
     content: ''; 
     position: absolute; 
     background: #e1d9bd; 
-    left: 48%; 
+    left: 46.5%; 
     bottom: -5px; 
     width: 65px; 
     height: 3px; 
@@ -334,14 +335,14 @@ body {
 }
 
 .article_description {
-  font-size: 15px;
+  font-size: 1.1vw;
   line-height: 1.5;
   font-weight: 100;
 }
 
 .aside {
   margin-left: 120px;
-  width: 270px;
+  width: 30%;
 }
 
 .article_aside {
@@ -407,7 +408,7 @@ body {
   background-color: #f4f7f6;
   padding: 18px;
   border: none;
-  width: 220px;
+  width: 100%;
   height: 47px;
 }
 
@@ -516,7 +517,7 @@ body {
   font-weight: 700;
   font-size: 20px;
 
-  width: 1120px;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -526,11 +527,12 @@ body {
 
 .products {
   display: flex;
-   margin-bottom: 110px;
+  margin-bottom: 110px;
 }
 
 .product {
-  margin-right: 115px;
+  width: 33%;
+  margin-right: 7%;
 }
 
 .product_img {
@@ -583,7 +585,7 @@ body {
 
 .socials {
   font-family: "OpenSans";
-  width: 1170px;
+  width: 100%;
   padding: 30px 0px 25px 0px;
   background-color: #f4f7f6;
   margin: 0 auto;
@@ -600,7 +602,7 @@ body {
 
 .socials_item {
   list-style-type: none;
-  margin-left: 40px;
+  margin-left: 4%;
 }
 
 .socials_link {
@@ -660,7 +662,7 @@ body {
 }
 
 .hidden {
-/*  display: none;*/
+  display: none;
 }
 
 .popup_body {
@@ -807,7 +809,7 @@ body {
   border: none;
 }
 
-.menu_burger {
+.burger {
   padding: 0;
   border: none;
   font: inherit;
@@ -818,36 +820,47 @@ body {
   background-image: url(../svg/menu.svg);
   background-size: 20px;
   display: none;
-
 }
 
 
 
 
-/*============================================================================*/
+/*================================Планшет=========================================*/
 @media (max-width: 768px) {
-  .menu {
-    display: none;
+
+.burger {
+  display: flex;
+  position: absolute;
+  top: 1;
+  right: 0;
+  z-index: 3;
+  margin-right: 35px;
+}
+
+.menu {
+  display: none;
 }
 
 .header {
   background-image: url(../img/banner-bg-tablet.jpg);
-      padding: 35px 35px 100px 35px;
-    }
+  padding: 35px 35px 100px 35px;
+  margin-bottom: 50px;
+}
 
 .logo {
   height: 25px;
 }
 .description {
-  font-size: 40px;
+  font-size: 5vw;
 }
 
 .title_products, .title_trends {
-  font-size: 18px;
+  font-size: 2.3vw;
 }
 
 .trends {
-  font-size: 17px;
+  font-size: 2.2vw;
+  margin-bottom: 50px;
 }
 
 .trends_content {
@@ -859,19 +872,21 @@ body {
 }
 
 .trends_article:nth-child(2n) {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .trends_article:nth-child(-n+2) {
   margin-bottom: 4px;
 }
-    .menu_burger {
-     display: flex;
-}
 
 .middle {
-  margin: 50px 35px 40px 35px;
+  margin: 0 auto;
 }
+
+.date_author {
+  margin: 40px 0px;
+}
+
 
 .aside {
   margin-left: 30px;
@@ -879,11 +894,29 @@ body {
 
 .article {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  border-bottom: solid 2px #eeeeee; 
+  margin-bottom: 50px;
+}
+
+.article_description {
+ margin-bottom: 20px;
+}
+
+.article:last-child {
+ border: none;
 }
 
 .article_title {
-  font-size: 17px;
+  font-size: 2.2vw;
+}
+
+.trend_link {
+  font-size: 2.2vw;
+}
+
+.article_description {
+  font-size: 2vw;
 }
 
 .article_img {
@@ -926,40 +959,66 @@ body {
   outline-offset: 23px;
 }
 
-  }
-
+.copyright {
+margin-top: 50px;
+}
+}
 /*=================================================================*/
 
   @media (max-width: 360px) {
-  .menu {
-    display: none;
-}
+
 
 .header {
 background-image: url(../img/banner-mobile.jpg);
-      padding: 35px 0 100px 0;
     }
+
  .card_header {
   flex-direction: column-reverse;
+  width: 265px;
  }
 
 .logo {
   display: block;
-  margin: 0 auto;
-  width: 265px;
+margin: 180px 0px 0px 0px;
   height: 50px;
+}
 
+.article_description {
+  font-size: 4vw;
 }
+
+.trend_link {
+  font-size: 4.5vw;
+}
+
 .description {
-  font-size: 26px;
+  margin: 0 auto;
+   width: 280px;
+ 
 }
+
+.description_title {
+   font-size: 26px;
+   margin-top: 45px;
+   margin-bottom: 100px;
+}
+
+.article:last-child {
+ border-bottom: solid 2px #eeeeee;
+ margin-bottom: 35px;
+}
+
+.search {
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
 
 .title1 {
-  font-size: 16px;
+  font-size: 4.4vw;
 }
 
-.trends {
-  font-size: 16px;
+.trends, .title_trends, .products_title {
+  font-size: 4.4vw;
 }
 
 .trends_content {
@@ -976,22 +1035,25 @@ background-image: url(../img/banner-mobile.jpg);
   margin-bottom: 0;
 }
 
-    .menu_burger {
-      margin-left: 275px;
-      width: 20px;
-      height: 20px;
-      margin-bottom: 170px;
+.trends_article:nth-child(odd) {
+  margin-right: 0;
 }
+
+.trends_title::after {
+    left: 40%; 
+   }
 
 .middle {
   width: 330px;
   flex-wrap: wrap;
-  /*margin: 50px 15px 40px 15px;*/
+  margin-bottom: 40px;
 }
 
 .aside {
-  margin: 0;
+  width: 330px;
+  margin: 0 auto;
 }
+
 .article {
   display: flex;
   flex-direction: column; 
@@ -1006,6 +1068,14 @@ background-image: url(../img/banner-mobile.jpg);
   margin-bottom: 10px;
 }
 
+.button_subscription {
+  margin-bottom: 40px;
+}
+
+.field_search {
+  width: 280px;
+
+}
 
 .our_products, .socials {
   width: 330px;
@@ -1013,14 +1083,14 @@ background-image: url(../img/banner-mobile.jpg);
 }
 
 .products {
-  margin: 30px 20px 100px 20px;
+  margin: 30px 20px 20px 20px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .product {
   width: 290px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .product3 {
@@ -1037,3 +1107,5 @@ background-image: url(../img/banner-mobile.jpg);
 }
 
   }
+
+/*====================================================================================*/
