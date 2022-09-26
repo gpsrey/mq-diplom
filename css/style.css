@@ -335,7 +335,7 @@ body {
 }
 
 .article_description {
-  font-size: 1.1vw;
+  font-size: 15px;
   line-height: 1.5;
   font-weight: 100;
 }
@@ -537,7 +537,9 @@ body {
 
 .product_img {
   margin-bottom: 10px;
+    width: 100%;
 }
+
 
 .score_button {
   font-size: 14px;
@@ -569,7 +571,7 @@ body {
 
 .product_content {
   outline: 3px solid #b59f5b;
-  outline-offset: 30px;
+  outline-offset: 1em;
   text-align: left;
   flex-grow: 1;
   
@@ -822,9 +824,6 @@ body {
   display: none;
 }
 
-
-
-
 /*================================Планшет=========================================*/
 @media (max-width: 768px) {
 
@@ -916,7 +915,7 @@ body {
 }
 
 .article_description {
-  font-size: 2vw;
+  font-size: 15px;
 }
 
 .article_img {
@@ -984,7 +983,7 @@ margin: 180px 0px 0px 0px;
 }
 
 .article_description {
-  font-size: 4vw;
+  font-size: 14px;
 }
 
 .trend_link {
